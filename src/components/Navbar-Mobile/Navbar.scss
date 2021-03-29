@@ -1,0 +1,38 @@
+@import '../../scss/global/color';
+
+nav{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    height: 60px;
+    background-color: $background-color-dark;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 5;
+
+    .navbar-item{
+        position: relative;
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $background-color-light;
+
+        svg{
+            position: relative;
+            fill: $background-color-light;
+        }
+    }
+
+    .divider{
+        position: relative;
+        width: 3px;
+        height: 80%;
+        background-color: $background-color-light;
+    }
+}
