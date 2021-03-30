@@ -6,9 +6,12 @@ const Hero = () => {
     return (
         <section className="hero">
             <h3>Hi, I am a</h3>
-            <h1>
+            <div className={"typewriter"}>
+                <h1 className={"placeholder"}>
+                    Passionate Photographer
+                </h1>
                 <TypeWriter/>
-            </h1>
+            </div>
             <h4>Welcome to my artboard</h4>
             <h4>👇👇👇</h4>
             <p>scroll down</p>

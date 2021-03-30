@@ -1,9 +1,9 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavbarItem = ({ children, linkPath }) => {
-  return <Link to={linkPath} className="navbar-item">{children}</Link>;
+  return <NavLink activeClassName={"active-link"} to={linkPath} className="navbar-item">{children}</NavLink>;
 };
 
 export default NavbarItem;

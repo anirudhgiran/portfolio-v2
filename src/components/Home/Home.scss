@@ -21,21 +21,44 @@ main{
             font-weight: 200;
             font-style: italic;
         }
-        h1{
+        
+        .typewriter{
             position: relative;
-            font-weight: 600;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin: 10px auto;
 
-            &::before{
-                content: "";
+            .placeholder{
+                position: relative;
+                opacity: 0;
+                pointer-events: none;
+                user-select: none;
+            }
+            
+            .heading{
                 position: absolute;
-                width: 100%;
-                left: 0;
-                bottom: 0;
-                height: 18%;
-                z-index: -1;
-                background-color: $underline-color;
+                font-weight: 600;
+                top: 0;
+                left: 50%;
+                white-space: nowrap;
+                transform: translateX(-50%);
+    
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    height: 18%;
+                    z-index: -1;
+                    background-color: $underline-color;
+                }
             }
         }
+
         h4{
             position: relative;
             font-weight: 400;
@@ -189,9 +212,10 @@ main{
                 width: 90%;
                 height: auto;
                 margin: 0 auto;
-
+                margin-bottom: 35px;
                 display: grid;
-                grid-template-columns: repeat(4,1fr);
+                grid-template-columns: repeat(3,1fr);
+                gap: 20px;
 
                 .skills-item{
                     position: relative;
