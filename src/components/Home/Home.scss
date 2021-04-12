@@ -177,8 +177,9 @@ main.home{
 
     section.about{
         position: relative;
-        width: 100%;
+        width: 90%;
         height: auto;
+        margin: 0 auto;
 
         h1{
             position: relative;
@@ -193,8 +194,31 @@ main.home{
 
         p{
             position: relative;
-            width: 90%;
-            margin: 0 auto;
+            width: 100%;
+        }
+
+        .download-resume-btn{
+            background-color: $background-color-dark;
+            color: $background-color-light;
+            padding: 0.3em;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            width: auto;
+            justify-content: flex-start;
+            margin-bottom: 35px;
+
+            svg{
+                position: relative;
+                width: 20px;
+                height: 20px;
+                margin-right: 5px;
+                fill: $background-color-light;
+            }
+
+            &:hover{
+                background-color: $accent-color;
+            }
         }
 
         .skills{
@@ -226,6 +250,7 @@ main.home{
                     flex-direction: column;
                     align-items: center;
                     justify-content: flex-end;
+                    justify-self: center;
 
                     img{
                         position: relative;

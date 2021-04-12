@@ -7,7 +7,7 @@ import NavbarItem from "./NavbarItem";
 const Navbar = () => {
   return (
     <nav>
-      <NavbarItem linkPath={"/"}>
+      <NavbarItem linkPath={"/"} exact>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -35,7 +35,7 @@ const Navbar = () => {
 
       <div className="divider"></div>
 
-      <NavbarItem linkPath={"/contact"}>
+      <NavbarItem linkPath={"/contact"} exact>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

@@ -35,7 +35,7 @@ const ProjectItem = () => {
             <p>{item.details}</p>
             <div className="links">
                 <Link to={item.knowMoreURL}>Know More</Link>
-                <a href={item.demoURL}>Demo</a>
+                {item.demoURL && <a href={item.demoURL}>Demo</a>}
             </div>
         </div> )}
       </>
