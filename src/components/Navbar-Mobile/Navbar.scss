@@ -21,16 +21,20 @@ nav{
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        color: $background-color-light;
+        color: $accent-color;
 
         svg{
             position: relative;
-            fill: $background-color-light;
+            fill: $accent-color;
         }
     }
 
     .active-link{
-        color: blue;
+        color: $background-color-light;
+
+        svg{
+            fill: $background-color-light;
+        }
     }
 
     .divider{

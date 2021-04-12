@@ -1,4 +1,5 @@
 @import './scss/global/font';
+@import './scss/global/color';
 
 *{
     margin: 0;
@@ -7,9 +8,23 @@
     font-family: $font-all;
 }
 
+:root{
+    &::-webkit-scrollbar{
+        width: 8px;
+        background-color: $shadow-color;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color: $background-color-dark;
+    }
+}
+
 body{
     position: relative;
     width: 100%;
     height: auto;
     min-height: 100vh;
 }
+
+//https://css-tricks.com/custom-scrollbars-in-webkit/
+//https://developer.mozilla.org/en-US/docs/Web/CSS/::-webkit-scrollbar

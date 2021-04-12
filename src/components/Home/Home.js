@@ -10,7 +10,7 @@ import AboutMe from './components/AboutMe';
 
 const Home = () => {
     return (
-        <main>
+        <main className="home">
             <Hero/>
             <ProjectList/>
             <AboutMe/>
