@@ -43,6 +43,7 @@ main.projects {
       align-items: flex-start;
       justify-content: flex-start;
       margin-bottom: 25px;
+      overflow: hidden;
 
       h1.counter{
           position: relative;
@@ -69,7 +70,7 @@ main.projects {
         &::before {
           content: attr(data-backdrop);
           position: absolute;
-          font-size: 40px;
+          font-size: 64px;
           z-index: -1;
           color: $shadow-color;
           white-space: nowrap;

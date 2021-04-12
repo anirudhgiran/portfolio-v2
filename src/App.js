@@ -8,6 +8,9 @@ import Home from './components/Home/Home';
 //Component Imports {Projects}
 import Projects from './components/Projects/Projects';
 
+//Components Imports {Contact}
+import Contact from './components/Contact/Contact';
+
 //Components Import {Individual Project}
 import ProjectTemplate from './components/IndividualProjects/ProjectTemplate';
 
@@ -23,6 +26,7 @@ function App() {
           <Route path="/" exact component={Home}/>
           <Route path="/projects" exact component={Projects}/>
           <Route path="/projects/:id" component={ProjectTemplate}/>
+          <Route path="/contact" component={Contact}/>
         </Switch>
         <NavbarMobile />
       </Router>
