@@ -44,6 +44,7 @@ main.projects {
       justify-content: flex-start;
       margin-bottom: 25px;
       overflow: hidden;
+      border-bottom: 1px solid $background-color-dark;
 
       h1.counter{
           position: relative;
@@ -94,6 +95,7 @@ main.projects {
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          margin-bottom: 15px;
 
         a {
             position: relative;
