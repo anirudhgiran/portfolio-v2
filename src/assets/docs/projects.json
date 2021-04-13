@@ -2,7 +2,16 @@
     {
         "id": "twitter-spoof",
         "heading" : "Twitter Spoof",
-        "details": "Details go here",
-        "technologies": ["reactjs.png"]
+        "details": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam aspernatur ipsam sint perspiciatis voluptatum impedit suscipit corporis ea fuga!",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam aspernatur ipsam sint perspiciatis voluptatum impedit suscipit corporis ea fuga!"
+        ],
+        "technologies": ["reactjs.png", "firebase.png", "sass.png", "vs-code-logo.svg"]
+    },
+    {
+        "id": "one-color-ui",
+        "heading": "One Color UI",
+        "details": ["Details go here"],
+        "technologies":["html.png","css.png","javascript.svg"]
     }
 ]

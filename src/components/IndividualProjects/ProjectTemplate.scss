@@ -1,7 +1,71 @@
+@import '../../scss/global/color';
+@import '../../scss/global/font';
+
 main.individual-project{
     position: relative;
     top: 60px;
     height: auto;
+    min-height: auto;
     width: 90%;
     margin: 0 auto;
+
+    h1.heading{
+        position: relative;
+        text-align: center;
+        font-family: $font-head;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0 auto;
+        margin-bottom: 35px;
+        margin-top: 35px;
+
+        &::before {
+          content: attr(data-backdrop);
+          position: absolute;
+          font-size: 64px;
+          z-index: -1;
+          color: $shadow-color;
+          white-space: nowrap;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+
+    .items-container{
+        position: relative;
+        width: auto;
+        height: auto;
+        // margin: 0 auto;
+        margin-bottom: 35px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,60px);
+        gap: 20px;
+
+        .skills-item{
+            position: relative;
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            // justify-self: center;
+
+            img{
+                position: relative;
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+            }
+
+            p{
+                position: relative;
+                text-align: center;
+            }
+        }
+    }
+    
 }
