@@ -17,18 +17,23 @@ import ProjectTemplate from './components/IndividualProjects/ProjectTemplate';
 //React Router DOM Imports
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+//Responsive React Imports
+import { IdResponsiveRenderOnlyIn, Responsive } from 'responsive-react';
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
         <Switch>
-          <Route path="/" exact component={Home}/>
-          <Route path="/projects" exact component={Projects}/>
-          <Route path="/projects/:id" component={ProjectTemplate}/>
-          <Route path="/contact" component={Contact}/>
+          <Route path="/" exact component={Home} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/projects/:id" component={ProjectTemplate} />
+          <Route path="/contact" component={Contact} />
         </Switch>
-        <NavbarMobile />
+        <Responsive displayIn={[IdResponsiveRenderOnlyIn.Mobile]}>
+          <NavbarMobile />
+        </Responsive>
       </Router>
     </div>
   );

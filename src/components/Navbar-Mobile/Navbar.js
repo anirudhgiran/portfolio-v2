@@ -6,7 +6,7 @@ import NavbarItem from "./NavbarItem";
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className={"nav-mobile"}>
       <NavbarItem linkPath={"/"} exact>
         <svg
           xmlns="http://www.w3.org/2000/svg"

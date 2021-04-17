@@ -29,4 +29,25 @@ header{
             font-size: 32px;
         }
     }
+
+    .nav-laptop{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        a{
+            position: relative;
+            color: $background-color-light;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1080px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

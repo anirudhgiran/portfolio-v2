@@ -4,8 +4,8 @@
 main.individual-project{
     position: relative;
     top: 60px;
-    height: auto;
-    min-height: auto;
+    height: calc(100vh - 120px);
+    min-height: calc(100vh - 120px);
     width: 90%;
     margin: 0 auto;
 
