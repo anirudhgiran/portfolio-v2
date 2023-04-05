@@ -1,7 +1,7 @@
 @import "../../scss/global/color";
 @import "../../scss/global/font";
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@ header{
     background-color: $background-color-dark;
     z-index: 5;
 
-    a{
+    a {
         position: relative;
         display: flex;
         justify-content: center;
@@ -21,7 +21,7 @@ header{
         text-decoration: none;
         background-color: transparent;
 
-        h1{
+        h1 {
             font-family: $font-head;
             color: $background-color-light;
             letter-spacing: 3px;
@@ -30,13 +30,13 @@ header{
         }
     }
 
-    .nav-laptop{
+    .nav-laptop {
         position: relative;
         display: flex;
         justify-content: flex-end;
         align-items: center;
 
-        a{
+        a {
             position: relative;
             color: $background-color-light;
             text-decoration: none;
@@ -44,10 +44,23 @@ header{
     }
 }
 
-@media screen and (min-width: 1080px){
-    header{
+@media screen and (min-width: 1080px) {
+    header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 15%;
+        padding-right: 15%;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+
+            a {
+                margin-left: 35px;
+            }
+        }
     }
 }
